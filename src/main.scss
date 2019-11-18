@@ -19,6 +19,12 @@ h3{
 a{
     @include Bouton;
 }
+abbr{
+    &:hover{
+        background-color: $TitleColor;
+        color: white;
+    }
+}
 
 // HEADER
 .intro{

@@ -375,6 +375,11 @@ a:hover {
   border: #535353 10px solid;
 }
 
+abbr:hover {
+  background-color: black;
+  color: white;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
