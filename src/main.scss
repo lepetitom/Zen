@@ -1,0 +1,157 @@
+@import "normalize.scss";
+@import "mixins.scss";
+@import "variables.scss";
+
+// Basic elements
+p{
+    @include Text;
+}
+h1{
+    @include MainTitle;
+}
+h2{
+    @include SecondTitle;
+}
+h3{
+    @include SecondTitle;
+    font-size: 30px;
+}
+a{
+    @include Bouton;
+}
+
+// HEADER
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $Background;
+    header{
+        background-image: url(../img/garden2.jpg);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20vh 0 20vh 0;
+        width: 100%;
+    }
+
+    h1{
+        @include MainTitle;
+    }
+    h2{
+        @include SecondTitle;
+        color: white;
+    }
+}
+
+// summary
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    margin-top: -100px;
+    border-radius: 4000px;
+    padding: 30px 100px 30px 100px;
+    box-shadow: 1px 1px 30px #555;
+    
+    
+}
+
+//preamble
+
+.preamble{
+    text-align: center;
+    margin: 100px 300px 100px 300px;
+}
+
+// main supporting
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    .explanation{
+        padding: 17vh 700px 17vh 200px;
+        background-image: url(../img/garden.png);
+        background-size: cover;
+        background-position: center;
+        max-width: 600px;
+    }
+    .participation{
+        
+        padding: 17vh 200px 17vh 700px;
+        text-align: end;
+        background-image: url(../img/garden3.png);
+        background-size: cover;
+        background-position: center;
+        max-width: 600px;
+    }
+    .benefits{
+        @extend .explanation;
+        background-image: url(../img/garden4.png);
+    }
+    .requirements{
+        @extend .participation;
+        background-image: url(../img/garden5.png);
+        
+    }
+    a{
+        background-color: #ffffff00;
+        border: 0px;
+        
+    }
+    a:hover{
+        color: $MainColor;
+    }
+    
+    
+    
+}
+
+// SideBar
+
+.wrapper{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    .design-selection{
+        background-color: $Background;
+        width: 34%;
+        text-align: center;
+    }
+    .design-archives{
+        width: 33%;
+        background-color: $MainColor;
+        text-align: center;
+        color: white;
+    }
+    .zen-resources{
+        background-color: $TextColor;
+        width: 33%;
+        text-align: center;
+        h3{
+            color: white;
+        }
+        a{
+            color:white
+        }
+        
+    }
+    a{
+        background-color: #ffffff00;
+        border: 0px;
+        
+    }
+    li{
+        list-style-type: none;
+        text-align: center;
+    }
+}

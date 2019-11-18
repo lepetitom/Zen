@@ -1,0 +1,27 @@
+@mixin MainTitle{
+    color: white;
+    font-family: $TitleFont;
+    font-size: 80px;
+}
+@mixin SecondTitle{
+    color: $TitleColor;
+    font-family: $TitleFont;
+    font-size: 35px;
+}
+@mixin Text{
+    color: $TextColor;
+    font-size: $TextSize;
+    font-family: $TextFont;
+}
+@mixin Bouton{
+    color: $TitleColor;
+    background-color: $MainColor;
+    border-radius: 100px;
+    border: 10px solid $MainColor;
+    font-family: $TitleFont;
+    &:hover{
+        background: $TextColor;
+        color: white;
+        border: $TextColor 10px solid;
+    }
+}
